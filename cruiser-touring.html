@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cruiser/Touring Bikes - Bike Guide</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo" aria-label="Bike Guide Logo">
+                <img src=".\Images\image.png" alt="BIKE GUIDE logo">
+            </a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="explore-bikes.html">Explore Bikes</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                </ul>
+            </nav>
+            <div class="wishlist-container">
+                <button class="btn wishlist-btn" onclick="window.location.href='wishlist.html'">
+                    Wishlist
+                    <ion-icon name="heart-outline"></ion-icon>
+                </button>
+              </div>
+            <div class="contact-info">
+                <p>+91 869 199 1997</p>
+                <p>Mon - Sat: 9:00 am - 6:00 pm</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <article>
+
+            <!-- HERO SECTION -->
+            <section class="hero">
+                <div class="container">
+                    <h1>Cruiser/Touring Bikes</h1>
+                    <p>Explore our collection of cruiser and touring bikes, perfect for any adventure!</p>
+                </div>
+            </section>
+
+            <!-- BIKE LIST SECTION -->
+            <section class="bike-list">
+                <div class="container">
+
+                    
+
+                    <!-- BEGINNER BIKES -->
+                    <div class="category-section">
+                        <h2>Beginner Bikes</h2>
+                        <div class="bike-item">
+                            <figure>
+                                <img src=".\Images\dominar250.jpg" alt="Dominar 250" loading="lazy">
+                            </figure>
+                            <div class="bike-info">
+                                <h3>Bajaj Dominar 250</h3>
+                                <p>Features:</p>
+                                <ul>
+                                    <li>Engine: 248.8 cc</li>
+                                    <li>Power: 27 hp</li>
+                                    <li>Weight: 180 kg</li>
+                                    <li>Great for long-distance rides</li>
+                                    <li>1.80l</li>
+                                </ul>
+                                <button class="btn add-to-wishlist" onclick="addToWishlist('Bajaj Dominar 250')">Add to Wishlist</button>
+                            </div>
+                        </div>
+                    
+                        <div class="bike-item">
+                            <figure>
+                                <img src=".\Images\rebel500.jpg" alt="Honda Rebel 500" loading="lazy">
+                            </figure>
+                            <div class="bike-info">
+                                <h3>Honda Rebel 500</h3>
+                                <p>Features:</p>
+                                <ul>
+                                    <li>Engine: 471 cc</li>
+                                    <li>Power: 47 hp</li>
+                                    <li>Weight: 190 kg</li>
+                                    <li>Lightweight, perfect for beginners</li>
+                                    <li>4.5l</li>
+                                </ul>
+                                <button class="btn add-to-wishlist" onclick="addToWishlist('Honda Rebel 500')">Add to Wishlist</button>
+                            </div>
+                        </div>
+                    
+                        
+                    </div>
+                    
+                       
+                
+
+
+                    <!-- INTERMEDIATE TYPES -->
+                    <div class="category-section">
+                        <h2>Intermediate Types</h2>
+                    <!-- Bike 1 -->
+                    <div class="bike-item">
+                        <figure>
+                            <img src=".\Images\harleystreet750.jpg" alt="Harley-Davidson Street 750" loading="lazy">
+                        </figure>
+                        <div class="bike-info">
+                            <h3>Harley-Davidson Street 750</h3>
+                            <p>Features:</p>
+                            <ul>
+                                <li>Engine: 749 cc</li>
+                                <li>Power: 53 hp</li>
+                                <li>Weight: 222 kg</li>
+                                <li>Easy to handle, city-friendly cruiser</li>
+                                <li>4.90l</li>
+                            </ul>
+                            <button class="btn add-to-wishlist" onclick="addToWishlist('Harley-Davidson Street 750')">Add to Wishlist</button>
+                        </div>
+                        </div>
+                    
+                        <div class="bike-item">
+                            <figure>
+                                <img src=".\Images\kawasakivulcan.jpg" alt="Intermediate Cruiser Bike" loading="lazy">
+                            </figure>
+                            <div class="bike-info">
+                                <h3>Kawasaki Vulcan S</h3>
+                                <p>Features:</p>
+                                <ul>
+                                    <li>Engine: 649 cc</li>
+                                    <li>Power: 60 hp</li>
+                                    <li>Weight: 220 kg</li>
+                                    <li>Versatile for city and highway riding</li>
+                                    <li>5.88l</li>
+                                </ul>
+                                <button class="btn add-to-wishlist" onclick="addToWishlist('Kawasaki Vulcan S')">Add to Wishlist</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- EXPERT LEVEL BIKES -->
+                    <div class="category-section">
+                        <h2>Expert Level Bikes</h2>
+
+                        <div class="bike-item">
+                            <figure>
+                                <img src=".\Images\chiefdarkhorse.jpg" alt="Expert Cruiser Bike" loading="lazy">
+                            </figure>
+                            <div class="bike-info">
+                                <h3>Indian Chief Dark Horse</h3>
+                                <p>Features:</p>
+                                <ul>
+                                    <li>Engine: 1811 cc</li>
+                                    <li>Power: 100 hp</li>
+                                    <li>Weight: 300 kg</li>
+                                    <li>Ideal for long-distance cruising</li>
+                                    <li>20.20l</li>
+                                </ul>
+                                <button class="btn add-to-wishlist" onclick="addToWishlist('Indian Chief Dark Horse')">Add to Wishlist</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bike 2 -->
+                    <div class="bike-item">
+                        <figure>
+                            <img src=".\Images\yamahaBoltR-spec.jpg" alt="Cruiser Bike 2" loading="lazy">
+                        </figure>
+                        <div class="bike-info">
+                            <h3>Yamaha Bolt R-Spec</h3>
+                            <p>Features:</p>
+                            <ul>
+                                <li>Engine: 942 cc</li>
+                                <li>Power: 65 hp</li>
+                                <li>Weight: 251 kg</li>
+                                <li>Classic design with modern performance</li>
+                                <li>6.90l</li>
+                            </ul>
+                            <button class="btn add-to-wishlist" onclick="addToWishlist('Yamaha Bolt R-Spec')">Add to Wishlist</button>
+                        </div>
+                    </div>
+
+                    <!-- Bike 3 -->
+                    <div class="bike-item">
+                        <figure>
+                            <img src=".\Images\victoryoctance.jpg" alt="Cruiser Bike 3" loading="lazy">
+                        </figure>
+                        <div class="bike-info">
+                            <h3>Victory Octane</h3>
+                            <p>Features:</p>
+                            <ul>
+                                <li>Engine: 1200 cc</li>
+                                <li>Power: 104 hp</li>
+                                <li>Weight: 229 kg</li>
+                                <li>Performance-oriented cruiser</li>
+                                <li>13 l</li>
+                            </ul>
+                            <button class="btn add-to-wishlist" onclick="addToWishlist('Victory Octane')">Add to Wishlist</button>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </article>
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <img src=".\Images\image.png" alt="Bike Guide logo">
+                    </a>
+                    <p>Explore a diverse range of bikes, including cruisers, sports racers, and hybrid models, to suit your preferences and needs.</p>
+                </div>
+                <ul class="footer-list">
+                    <li><p>Company</p></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Plans</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+                <ul class="footer-list">
+                    <li><p>Support</p></li>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Ask a Question</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- Wishlist Functionality -->
+    <script>
+        function addToWishlist(bikeName) {
+            alert(bikeName + ' has been added to your wishlist!');
+            // Here you can implement the actual wishlist logic
+        }
+    </script>
+
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2"></script>
+    <script>
+    // Function to add a bike to the wishlist and store it in localStorage
+    function addToWishlist(bikeName, bikeImage, bikeDescription) {
+        let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+
+        // Create a new bike object
+        const bike = {
+            name: bikeName,
+            image: bikeImage,
+            description: bikeDescription
+        };
+
+        // Add the bike to the wishlist if it's not already there
+        if (!wishlist.some(item => item.name === bikeName)) {
+            wishlist.push(bike);
+            localStorage.setItem('wishlist', JSON.stringify(wishlist));
+            alert(bikeName + ' has been added to your wishlist!');
+        } else {
+            alert(bikeName + ' is already in your wishlist!');
+        }
+    }
+</script>
+</body>
+</html>

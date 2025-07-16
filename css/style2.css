@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, rgba(212, 142, 212, 0.753), rgba(108, 95, 228, 0.753)), url('bike.jpg') no-repeat center center/cover;
+}
+
+.login-container {
+    width: 300px;
+    padding: 40px;
+    background-color: rgb(238, 135, 238);
+    box-shadow: 0 15px 30px rgba(61, 87, 230, 0.63);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    text-align: center;
+}
+
+h2 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    font-size: 16px;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: #fff;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+    top: -5px;
+    font-size: 12px;
+    color: #20d3d3;
+}
+
+.btn {
+    width: 100%;
+    background: #5754ebe0;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #0c08e7;
+}
+
+.signup-btn {
+    margin-top: 15px;
+    background: #5754ebe0;
+}
+
+.signup-btn:hover {
+    background: #0c08e7;
+}
+
+.forgot-password {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.forgot-password a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.forgot-password a:hover {
+    color: #20d3d3;
+}
+

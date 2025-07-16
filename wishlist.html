@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wishlist - Bike Guide</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo" aria-label="Bike Guide Logo">
+                <img src="./Images/image.png" alt="BIKE GUIDE logo">
+            </a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="explore-bikes.html">Explore Bikes</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                </ul>
+            </nav>
+            <div class="contact-info">
+                <p>+91 869 199 1997</p>
+                <p>Mon - Sat: 9:00 am - 6:00 pm</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <article>
+            <!-- HERO SECTION -->
+            <section class="hero">
+                <div class="container">
+                    <h1>Your Wishlist</h1>
+                    <p>Here are the bikes you have added to your wishlist!</p>
+                </div>
+            </section>
+
+            <!-- WISHLIST SECTION -->
+            <section class="wishlist">
+                <div class="container">
+                    <!-- Wishlist items will be loaded here -->
+                </div>
+            </section>
+
+        </article>
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <img src="./assets/images/logo.svg" alt="Bike Guide logo">
+                    </a>
+                    <p>Explore a diverse range of bikes, including cruisers, sports racers, and hybrid models, to suit your preferences and needs.</p>
+                </div>
+                <ul class="footer-list">
+                    <li><p>Company</p></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Plans</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+                <ul class="footer-list">
+                    <li><p>Support</p></li>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Ask a Question</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script>
+        // Function to load wishlist items from localStorage
+        function loadWishlist() {
+            const wishlistContainer = document.querySelector('.wishlist .container');
+            let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+
+            // Clear the wishlist container
+            wishlistContainer.innerHTML = '';
+
+            if (wishlist.length === 0) {
+                wishlistContainer.innerHTML = '<p>Your wishlist is empty.</p>';
+            } else {
+                // Loop through each bike and create a wishlist item
+                wishlist.forEach(bike => {
+                    const wishlistItem = `
+                        <div class="wishlist-item">
+                            <figure>
+                                <img src="${bike.image}" alt="${bike.name}" loading="lazy">
+                            </figure>
+                            <div class="bike-info">
+                                <h3>${bike.name}</h3>
+                                <p>${bike.description}</p>
+                                <button class="btn remove-from-wishlist" onclick="removeFromWishlist('${bike.name}')">Remove from Wishlist</button>
+                            </div>
+                        </div>
+                    `;
+                    wishlistContainer.innerHTML += wishlistItem;
+                });
+            }
+        }
+
+        // Function to remove a bike from the wishlist
+        function removeFromWishlist(bikeName) {
+            let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+            wishlist = wishlist.filter(bike => bike.name !== bikeName);
+            localStorage.setItem('wishlist', JSON.stringify(wishlist));
+            loadWishlist();
+            alert(bikeName + ' has been removed from your wishlist.');
+        }
+
+        // Call the loadWishlist function on page load
+        document.addEventListener('DOMContentLoaded', loadWishlist);
+    </script>
+
+</body>
+
+</html>

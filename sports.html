@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Racer Bikes - Bike Guide</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo" aria-label="Bike Guide Logo">
+                <img src=".\Images\image.png" alt="BIKE GUIDE logo">
+            </a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="explore-bikes.html">Explore Bikes</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                </ul>
+            </nav>
+            <div class="wishlist-container">
+                <button class="btn wishlist-btn" onclick="window.location.href='wishlist.html'">
+                    Wishlist
+                    <ion-icon name="heart-outline"></ion-icon>
+                </button>
+              </div>
+            <div class="contact-info">
+                <p>+91 869 199 1997</p>
+                <p>Mon - Sat: 9:00 am - 6:00 pm</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <article>
+
+            <!-- HERO SECTION -->
+            <section class="hero">
+                <div class="container">
+                    <h1>Sports Racer Bikes</h1>
+                    <p>Discover our thrilling collection of sports bikes designed for speed and performance!</p>
+                </div>
+            </section>
+
+            <!-- BIKE LIST SECTION -->
+            <section class="bike-list">
+                <div class="container">
+
+                    <!-- BEGINNER BIKES -->
+                    <div class="category-section">
+                        <h2>Beginner Bikes</h2>
+                        <div class="bike-item">
+                            <figure>
+                                <img src=".\Images\R15-v4.jpg.webp" alt="Yamaha R15 V4" loading="lazy">
+                            </figure>
+                            <div class="bike-info">
+                                <h3>Yamaha R15 V4</h3>
+                                <p>Features:</p>
+                                <ul>
+                                    <li>Engine: 155 cc</li>
+                                    <li>Power: 18.6 hp</li>
+                                    <li>Weight: 142 kg</li>
+                                    <li>Sporty design and lightweight</li>
+                                    <li>1.80l</li>
+                                </ul>
+                                <button class="btn add-to-wishlist" onclick="addToWishlist('Yamaha R15 V4')">Add to Wishlist</button>
+                            </div>
+                        </div>
+
+                        <div class="bike-item">
+                            <figure>
+                                <img src=".\Images\R15-v3.jpg.jpeg" alt="Yamaha R15 V3" loading="lazy">
+                            </figure>
+                            <div class="bike-info">
+                                <h3>Yamaha R15 V3</h3>
+                                <p>Features:</p>
+                                <ul>
+                                    <li>Engine: 155 cc</li>
+                                    <li>Power: 19.3 hp</li>
+                                    <li>Weight: 142 kg</li>
+                                    <li>Agile handling and aggressive styling</li>
+                                    <li>1.53l</li>
+                                </ul>
+                                <button class="btn add-to-wishlist" onclick="addToWishlist('Yamaha R15 V3')">Add to Wishlist</button>
+                            </div>
+                        </div>
+                        <div class="bike-item">
+                            <figure>
+                                <img src=".\Images\ktm-rc390.jpg" alt="KTM RC 390" loading="lazy">
+                            </figure>
+                            <div class="bike-info">
+                                <h3>KTM RC 390</h3>
+                                <p>A small-displacement bike with a powerful engine, the RC 390 is known for its sharp handling and aggressive styling.</p>
+                                <button class="btn add-to-wishlist" onclick="addToWishlist('KTM RC 390')">Add to Wishlist</button>
+                            </div>
+                        </div>
+                    
+                        <div class="bike-item">
+                            <figure>
+                                <img src=".\Images\yzf-r3.jpg" alt="Yamaha YZF-R3" loading="lazy">
+                            </figure>
+                            <div class="bike-info">
+                                <h3>Yamaha YZF-R3</h3>
+                                <p>A great entry-level sportbike that combines a lightweight chassis with a responsive engine, making it easy for beginners to maneuver.</p>
+                                <ul><li>4.55l</li></ul>
+                                <button class="btn add-to-wishlist" onclick="addToWishlist('Yamaha YZF-R3')">Add to Wishlist</button>
+                            </div>
+                        </div>
+                    
+                        <div class="bike-item">
+                            <figure>
+                                <img src=".\Images\cbr500.jpg" alt="Honda CBR500R" loading="lazy">
+                            </figure>
+                            <div class="bike-info">
+                                <h3>Honda CBR500R</h3>
+                                <p>Offers a balance between performance and comfort, suitable for new riders looking for a sporty yet manageable ride.</p>
+                                <ul><li>4.99l</li></ul>
+                                
+                                <button class="btn add-to-wishlist" onclick="addToWishlist('Honda CBR500R')">Add to Wishlist</button>
+                            </div>
+                        </div>
+                    
+                        <div class="bike-item">
+                            <figure>
+                                <img src=".\Images\suzukigsx250.jpg" alt="Suzuki GSX250R" loading="lazy">
+                            </figure>
+                            <div class="bike-info">
+                                <h3>Suzuki GSX250R</h3>
+                                <p>A small-displacement bike with a comfortable riding position, ideal for beginners wanting a sporty feel without overwhelming power.</p>
+                                <ul><li>1.93l</li></ul>
+                                <button class="btn add-to-wishlist" onclick="addToWishlist('Suzuki GSX250R')">Add to Wishlist</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <!-- INTERMEDIATE TYPES -->
+                    <div class="category-section">
+                        <h2>Intermediate Types</h2>
+                        <div class="bike-item">
+                            <figure>
+                                <img src=".\Images\ninja400.jpg" alt="Beginner Sports Bike" loading="lazy">
+                            </figure>
+                            <div class="bike-info">
+                                <h3>Kawasaki Ninja 400</h3>
+                                <p>Features:</p>
+                                <ul>
+                                    <li>Engine: 399 cc</li>
+                                    <li>Power: 45 hp</li>
+                                    <li>Weight: 168 kg</li>
+                                    <li>Ideal for new riders</li>
+                                    <li>5.26l</li>
+                                </ul>
+                                <button class="btn add-to-wishlist" onclick="addToWishlist('Kawasaki Ninja 400')">Add to Wishlist</button>
+                            </div>
+                        </div>
+                        <div class="bike-item">
+                            <figure>
+                                <img src=".\Images\YZF-R6.jpg" alt="Intermediate Sports Bike" loading="lazy">
+                            </figure>
+                            <div class="bike-info">
+                                <h3>Yamaha YZF-R6</h3>
+                                <p>Features:</p>
+                                <ul>
+                                    <li>Engine: 599 cc</li>
+                                    <li>Power: 117 hp</li>
+                                    <li>Weight: 190 kg</li>
+                                    <li>Perfect for intermediate riders</li>
+                                    <li>15l</li>
+                                </ul>
+                                <button class="btn add-to-wishlist" onclick="addToWishlist('Yamaha YZF-R6')">Add to Wishlist</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Bike 2 -->
+                    <div class="bike-item">
+                        <figure>
+                            <img src=".\Images\ktm-rc390.jpg" alt="Sports Bike 2" loading="lazy">
+                        </figure>
+                        <div class="bike-info">
+                            <h3>KTM RC 390</h3>
+                            <p>Features:</p>
+                            <ul>
+                                <li>Engine: 373 cc</li>
+                                <li>Power: 43 hp</li>
+                                <li>Weight: 172 kg</li>
+                                <li>Lightweight and agile</li>
+                                <li>2.87l/li>
+                            </ul>
+                            <button class="btn add-to-wishlist" onclick="addToWishlist('KTM RC 390')">Add to Wishlist</button>
+                        </div>
+                    </div>
+                    <!-- EXPERT LEVEL BIKES -->
+                    <div class="category-section">
+                        <h2>Expert Level Bikes</h2>
+
+                        <div class="bike-item">
+                            <figure>
+                                <img src=".\Images\BMW-S1000RR.jpg" alt="Expert Sports Bike" loading="lazy">
+                            </figure>
+                            <div class="bike-info">
+                                <h3>BMW S1000RR</h3>
+                                <p>Features:</p>
+                                <ul>
+                                    <li>Engine: 999 cc</li>
+                                    <li>Power: 205 hp</li>
+                                    <li>Weight: 197 kg</li>
+                                    <li>Ultimate performance machine</li>
+                                    <li>20.70l</li>
+                                </ul>
+                                <button class="btn add-to-wishlist" onclick="addToWishlist('BMW S1000RR')">Add to Wishlist</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bike 1 -->
+                    <div class="bike-item">
+                        <figure>
+                            <img src=".\Images\CBR600RR.jpg" alt="Sports Bike 1" loading="lazy">
+                        </figure>
+                        <div class="bike-info">
+                            <h3>Honda CBR600RR</h3>
+                            <p>Features:</p>
+                            <ul>
+                                <li>Engine: 599 cc</li>
+                                <li>Power: 118 hp</li>
+                                <li>Weight: 196 kg</li>
+                                <li>High-performance supersport bike</li>
+                                <li>12.50l</li>
+                            </ul>
+                            <button class="btn add-to-wishlist" onclick="addToWishlist('Honda CBR600RR')">Add to Wishlist</button>
+                        </div>
+                    </div>
+
+
+
+                    <!-- Bike 3 -->
+                    <div class="bike-item">
+                        <figure>
+                            <img src=".\Images\f3-800.jpg" alt="Sports Bike 3" loading="lazy">
+                        </figure>
+                        <div class="bike-info">
+                            <h3>MV Agusta F3 800</h3>
+                            <p>Features:</p>
+                            <ul>
+                                <li>Engine: 798 cc</li>
+                                <li>Power: 148 hp</li>
+                                <li>Weight: 173 kg</li>
+                                <li>Exclusive Italian sportbike</li>
+                                <li>20l</li>
+                            </ul>
+                            <button class="btn add-to-wishlist" onclick="addToWishlist('MV Agusta F3 800')">Add to Wishlist</button>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </article>
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <img src=".\Images\image.png" alt="Bike Guide logo">
+                    </a>
+                    <p>Explore a diverse range of bikes, including cruisers, sports racers, and hybrid models, to suit your preferences and needs.</p>
+                </div>
+                <ul class="footer-list">
+                    <li><p>Company</p></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Plans</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+                <ul class="footer-list">
+                    <li><p>Support</p></li>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Ask a Question</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- Wishlist Functionality -->
+    <script>
+        function addToWishlist(bikeName) {
+            alert(bikeName + ' has been added to your wishlist!');
+            // Here you can implement the actual wishlist logic
+        }
+    </script>
+
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        // Function to add a bike to the wishlist and store it in localStorage
+        function addToWishlist(bikeName, bikeImage, bikeDescription) {
+            let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+    
+            // Create a new bike object
+            const bike = {
+                name: bikeName,
+                image: bikeImage,
+                description: bikeDescription
+            };
+    
+            // Add the bike to the wishlist if it's not already there
+            if (!wishlist.some(item => item.name === bikeName)) {
+                wishlist.push(bike);
+                localStorage.setItem('wishlist', JSON.stringify(wishlist));
+                alert(bikeName + ' has been added to your wishlist!');
+            } else {
+                alert(bikeName + ' is already in your wishlist!');
+            }
+        }
+    </script>
+</body>
+
+</html>

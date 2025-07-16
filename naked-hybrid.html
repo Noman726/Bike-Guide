@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naked/Hybrid Bikes - Bike Guide</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo" aria-label="Bike Guide Logo">
+                <img src=".\Images\image.png" alt="BIKE GUIDE logo">
+            </a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="explore-bikes.html">Explore Bikes</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                </ul>
+            </nav>
+            <div class="wishlist-container">
+                <button class="btn wishlist-btn" onclick="window.location.href='wishlist.html'">
+                    Wishlist
+                    <ion-icon name="heart-outline"></ion-icon>
+                </button>
+              </div>
+            <div class="contact-info">
+                <p>+91 869 199 1997</p>
+                <p>Mon - Sat: 9:00 am - 6:00 pm</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <article>
+
+            <!-- HERO SECTION -->
+            <section class="hero">
+                <div class="container">
+                    <h1>Naked/Hybrid Bikes</h1>
+                    <p>Discover our versatile range of naked and hybrid bikes, perfect for any rider!</p>
+                </div>
+            </section>
+
+            <!-- BIKE LIST SECTION -->
+            <section class="bike-list">
+                <div class="container">
+
+                    <!-- Bike 1 -->
+                 
+
+                    <!-- BEGINNER BIKES -->
+                    <div class="category-section">
+                        <h2>Beginner Bikes</h2>
+
+                        <div class="bike-item">
+                            <figure>
+                                <img src=".\Images\Z400.jpg" alt="Beginner Naked Bike" loading="lazy">
+                            </figure>
+                            <div class="bike-info">
+                                <h3>Kawasaki Z400</h3>
+                                <p>Features:</p>
+                                <ul>
+                                    <li>Engine: 399 cc</li>
+                                    <li>Power: 45 hp</li>
+                                    <li>Weight: 167 kg</li>
+                                    <li>Lightweight and easy to handle</li>
+                                    <li>4l</li>
+                                </ul>
+                                <button class="btn add-to-wishlist" onclick="addToWishlist('Kawasaki Z400')">Add to Wishlist</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bike-item">
+                        <figure>
+                            <img src=".\Images\mt03.jpg" alt="Beginner Naked Bike 2" loading="lazy">
+                        </figure>
+                        <div class="bike-info">
+                            <h3>Yamaha MT-03</h3>
+                            <p>Features:</p>
+                            <ul>
+                                <li>Engine: 321 cc</li>
+                                <li>Power: 42 hp</li>
+                                <li>Weight: 169 kg</li>
+                                <li>Ideal for city commuting</li>
+                                <li>4.60l</li>
+                            </ul>
+                            <button class="btn add-to-wishlist" onclick="addToWishlist('Yamaha MT-03')">Add to Wishlist</button>
+                        </div>
+                    </div>
+                    
+                    <div class="bike-item">
+                        <figure>
+                            <img src=".\Images\cbr300rr.jpg" alt="Beginner Naked Bike 3" loading="lazy">
+                        </figure>
+                        <div class="bike-info">
+                            <h3>Honda CBR300R</h3>
+                            <p>Features:</p>
+                            <ul>
+                                <li>Engine: 286 cc</li>
+                                <li>Power: 31 hp</li>
+                                <li>Weight: 143 kg</li>
+                                <li>Compact and lightweight</li>
+                                <li>2.56l</li>
+                            </ul>
+                            <button class="btn add-to-wishlist" onclick="addToWishlist('Honda CB300R')">Add to Wishlist</button>
+                        </div>
+                    </div>
+                    
+                    <!-- INTERMEDIATE TYPES -->
+                    <div class="category-section">
+                        <h2>Intermediate Types</h2>
+
+                        <div class="bike-item">
+                            <figure>
+                                <img src=".\Images\mt-07.jpg" alt="Naked Bike 1" loading="lazy">
+                            </figure>
+                            <div class="bike-info">
+                                <h3>Yamaha MT-07</h3>
+                                <p>Features:</p>
+                                <ul>
+                                    <li>Engine: 689 cc</li>
+                                    <li>Power: 75 hp</li>
+                                    <li>Weight: 182 kg</li>
+                                    <li>Agile and fun to ride</li>
+                                    <li>8l</li>
+                                </ul>
+                                <button class="btn add-to-wishlist" onclick="addToWishlist('Yamaha MT-07')">Add to Wishlist</button>
+                            </div>
+                        </div>
+                        <div class="bike-item">
+                            <figure>
+                                <img src=".\Images\ducati.jpg" alt="Intermediate Naked Bike" loading="lazy">
+                            </figure>
+                            <div class="bike-info">
+                                <h3>Ducati Monster 821</h3>
+                                <p>Features:</p>
+                                <ul>
+                                    <li>Engine: 821 cc</li>
+                                    <li>Power: 109 hp</li>
+                                    <li>Weight: 205 kg</li>
+                                    <li>Sporty performance and style</li>
+                                    <li>13 l</li>
+                                </ul>
+                                <button class="btn add-to-wishlist" onclick="addToWishlist('Ducati Monster 821')">Add to Wishlist</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bike-item">
+                        <figure>
+                            <img src=".\Images\F900R.jpg" alt="Intermediate Naked Bike 2" loading="lazy">
+                        </figure>
+                        <div class="bike-info">
+                            <h3>BMW F 900 R</h3>
+                            <p>Features:</p>
+                            <ul>
+                                <li>Engine: 895 cc</li>
+                                <li>Power: 105 hp</li>
+                                <li>Weight: 211 kg</li>
+                                <li>Perfect balance of power and agility</li>
+                                <li>10.80l</li>
+                            </ul>
+                            <button class="btn add-to-wishlist" onclick="addToWishlist('BMW F 900 R')">Add to Wishlist</button>
+                        </div>
+                    </div>
+                    
+                    <div class="bike-item">
+                        <figure>
+                            <img src=".\Images\KawasakiZ650.jpg" alt="Intermediate Naked Bike 3" loading="lazy">
+                        </figure>
+                        <div class="bike-info">
+                            <h3>Kawasaki Z650</h3>
+                            <p>Features:</p>
+                            <ul>
+                                <li>Engine: 649 cc</li>
+                                <li>Power: 67 hp</li>
+                                <li>Weight: 187 kg</li>
+                                <li>Perfect for dynamic urban riding</li>
+                                <li>6.09l</li>
+                            </ul>
+                            <button class="btn add-to-wishlist" onclick="addToWishlist('Kawasaki Z650')">Add to Wishlist</button>
+                        </div>
+                    </div>
+                    
+                    <!-- EXPERT LEVEL BIKES -->
+                    <div class="category-section">
+                        <h2>Expert Level Bikes</h2>
+
+                        <div class="bike-item">
+                            <figure>
+                                <img src=".\Images\KTM-1290.jpg" alt="Expert Naked Bike" loading="lazy">
+                            </figure>
+                            <div class="bike-info">
+                                <h3>KTM 1290 Super Duke R</h3>
+                                <p>Features:</p>
+                                <ul>
+                                    <li>Engine: 1301 cc</li>
+                                    <li>Power: 180 hp</li>
+                                    <li>Weight: 189 kg</li>
+                                    <li>Ultimate naked performance</li>
+                                    <li>12.50l</li>
+                                </ul>
+                                <button class="btn add-to-wishlist" onclick="addToWishlist('KTM 1290 Super Duke R')">Add to Wishlist</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bike 2 -->
+                    <div class="bike-item">
+                        <figure>
+                            <img src=".\Images\cbr650.jpg" alt="Naked Bike 2" loading="lazy">
+                        </figure>
+                        <div class="bike-info">
+                            <h3>Honda CB650R</h3>
+                            <p>Features:</p>
+                            <ul>
+                                <li>Engine: 649 cc</li>
+                                <li>Power: 94 hp</li>
+                                <li>Weight: 202 kg</li>
+                                <li>Modern design with a naked look</li>
+                                <li>8.14l</li>
+                            </ul>
+                            <button class="btn add-to-wishlist" onclick="addToWishlist('Honda CB650R')">Add to Wishlist</button>
+                        </div>
+                    </div>
+                    <div class="bike-item">
+                        <figure>
+                            <img src=".\Images\aprilia1100.jpg" alt="Expert Naked Bike 2" loading="lazy">
+                        </figure>
+                        <div class="bike-info">
+                            <h3>Aprilia Tuono V4 1100</h3>
+                            <p>Features:</p>
+                            <ul>
+                                <li>Engine: 1077 cc</li>
+                                <li>Power: 175 hp</li>
+                                <li>Weight: 209 kg</li>
+                                <li>Thrilling performance for expert riders</li>
+                                <li>20l</li>
+                            </ul>
+                            <button class="btn add-to-wishlist" onclick="addToWishlist('Aprilia Tuono V4 1100')">Add to Wishlist</button>
+                        </div>
+                    </div>
+                    
+                    <div class="bike-item">
+                        <figure>
+                            <img src=".\Images\GSX-S1000.jpg" alt="Expert Naked Bike 3" loading="lazy">
+                        </figure>
+                        <div class="bike-info">
+                            <h3>Suzuki GSX-S1000</h3>
+                            <p>Features:</p>
+                            <ul>
+                                <li>Engine: 999 cc</li>
+                                <li>Power: 150 hp</li>
+                                <li>Weight: 214 kg</li>
+                                <li>Powerful engine with aggressive styling</li>
+                                <li>12l</li>
+                            </ul>
+                            <button class="btn add-to-wishlist" onclick="addToWishlist('Suzuki GSX-S1000')">Add to Wishlist</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Bike 3 -->
+                    <div class="bike-item">
+                        <figure>
+                            <img src=".\Images\triumpTripleR.jpg" alt="Naked Bike 3" loading="lazy">
+                        </figure>
+                        <div class="bike-info">
+                            <h3>Triumph Street Triple R</h3>
+                            <p>Features:</p>
+                            <ul>
+                                <li>Engine: 765 cc</li>
+                                <li>Power: 121 hp</li>
+                                <li>Weight: 168 kg</li>
+                                <li>Sharp handling and performance</li>
+                                <li>10.40l</li>
+                            </ul>
+                            <button class="btn add-to-wishlist" onclick="addToWishlist('Triumph Street Triple R')">Add to Wishlist</button>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </article>
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <img src=".\Images\image.png" alt="Bike Guide logo">
+                    </a>
+                    <p>Explore a diverse range of bikes, including cruisers, sports racers, and hybrid models, to suit your preferences and needs.</p>
+                </div>
+                <ul class="footer-list">
+                    <li><p>Company</p></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Plans</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+                <ul class="footer-list">
+                    <li><p>Support</p></li>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Ask a Question</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- Wishlist Functionality -->
+    <script>
+        function addToWishlist(bikeName) {
+            alert(bikeName + ' has been added to your wishlist!');
+            // Here you can implement the actual wishlist logic
+        }
+    </script>
+
+    <!-- Ionicons -->
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        // Function to add a bike to the wishlist and store it in localStorage
+        function addToWishlist(bikeName, bikeImage, bikeDescription) {
+            let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+    
+            // Create a new bike object
+            const bike = {
+                name: bikeName,
+                image: bikeImage,
+                description: bikeDescription
+            };
+    
+            // Add the bike to the wishlist if it's not already there
+            if (!wishlist.some(item => item.name === bikeName)) {
+                wishlist.push(bike);
+                localStorage.setItem('wishlist', JSON.stringify(wishlist));
+                alert(bikeName + ' has been added to your wishlist!');
+            } else {
+                alert(bikeName + ' is already in your wishlist!');
+            }
+        }
+    </script>
+
+</body>
+</html>
